@@ -1,1 +1,214 @@
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+
+/* Navbar */
+
+.navbar {
+  min-height: 54px;
+}
+
+.navbar-brand {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+/* Main container */
+
+.container {
+  max-width: 1180px;
+}
+
+
+/* Summary */
+
+.summary-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.summary-card .card-body {
+  padding: 20px;
+}
+
+.summary-label {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.summary-value {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.highest-title {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #777;
+}
+
+
+/* Main cards */
+
+.content-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.content-card .card-body {
+  padding: 16px;
+}
+
+.card-heading {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+
+/* Form */
+
+.form-label {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-control,
+.form-select {
+  font-size: 13px;
+  border-radius: 3px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+}
+
+.invalid-feedback {
+  font-size: 11px;
+}
+
+
+/* Buttons */
+
+.btn {
+  border-radius: 3px;
+}
+
+.btn-primary {
+  font-size: 12px;
+}
+
+
+/* Filter */
+
+.filter-box {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.filter-box .form-select {
+  width: 130px;
+}
+
+
+/* Table */
+
+.expense-table {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.expense-table thead th {
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 8px;
+}
+
+.expense-table tbody td {
+  padding: 9px 8px;
+}
+
+
+/* Category badge */
+
+.category-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 4px;
+  color: white;
+}
+
+.category-Food {
+  background-color: #2f9e44;
+}
+
+.category-Transport {
+  background-color: #1971c2;
+}
+
+.category-Bills {
+  background-color: #e67700;
+}
+
+.category-Entertainment {
+  background-color: #9c36b5;
+}
+
+.category-Other {
+  background-color: #6c757d;
+}
+
+
+/* Table buttons */
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.action-buttons .btn {
+  padding: 2px 7px;
+  font-size: 11px;
+}
+
+
+/* Spinner */
+
+#loadingSpinner {
+  position: fixed;
+  top: 70px;
+  right: 25px;
+  z-index: 2000;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .summary-value {
+    font-size: 20px;
+  }
+
+  .filter-box {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+}
